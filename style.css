@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+html{
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+body{
+    font-size: 15px;
+    background-image: url("./images/bg-pattern-top-desktop.svg"),  url("./images/bg-pattern-bottom-desktop.svg");
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    height: 100vh;
+    font-family: 'League Spartan', sans-serif;
+}
+.container{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-left: 0.5rem;
+}
+.product h1,
+.ratings p{
+    color: hsl(300, 43%, 22%);
+}
+.product p{
+    color: hsl(303, 10%, 53%)
+}
+.product h1 {
+    /* font-weight: 700; */
+}
+
+@media (max-width: 376px) {
+    .container{
+        width: 100%;
+    }
+    .product{
+        text-align: center;
+    }
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
