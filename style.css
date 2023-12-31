@@ -14,21 +14,22 @@ body{
     background-image: url("./images/bg-pattern-top-desktop.svg"),  url("./images/bg-pattern-bottom-desktop.svg");
     background-position: left top, right bottom;
     background-repeat: no-repeat, no-repeat;
-    /* background-color: hsl(300, 24%, 96%); */
     height: 100vh;
-    /* margin: 0 auto; */
-    /* padding: 3.5rem; */
     font-family: 'League Spartan', sans-serif;
 }
 .container{
     max-width: 1440px;
+    margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
     padding-left: 0.5rem;
     padding-left: 0.5rem;
-    padding: 4.5rem;
+    padding: 2.5rem 6.3rem;
+    /* padding-left: 5.5rem; */
     display: flex;
     flex-direction: column;
+    gap: 32px;
+    /* justify-content: center; */
     
     
 }
@@ -36,19 +37,21 @@ body{
     display: flex;
     flex: auto;
     gap: 5rem;
-    /* align-items: space-between; */
+    padding: 0 3.4rem;
+    
     
 }
 .product{
     width: 40%;
-    /* padding-right: 152px; */
-}
+    
+ }
 .product h1{
-   
-    font-size: 36px
+    font-size: 44px
 }
 .ratings{
-    width: 40%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
 }
 .product h1,
 .ratings p{
@@ -60,16 +63,29 @@ body{
 }
 .each-rating{
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     gap: 16px;
+    font-size: 0.9rem;  
+}
+.rates{
+    display: flex;
+    gap: 4px;
     width: 350px;
     height: 40px;
     margin: 0.5rem;
-    padding: 0.5rem;
+    padding: 0.9rem;
     border-radius: 4px;
-    font-size: 0.9rem;
-    background-color: pink
+    background-color: hsl(300, 24%, 96%);
+}
+.rating-one{
+    margin-top: 52px;
+}
+.rating-two{
+    margin-left: 52px;
+    
+}
+.rating-three{
+    margin-left: 104px;
 }
 .stars{
     margin-left: 0.5rem;
@@ -87,21 +103,36 @@ body{
     align-items: center;
     gap: 16px;
     line-height: 4px;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-weight: 700;
+}
+.verified{
+    font-weight: 0;
+    color: hsl(333, 80%, 67%);
+}
+.reviews{
+    display: flex;
+    gap: 16px;
+    padding: 0 2.92rem;
 }
 section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: hsl(300, 43%, 22%);
-    width: 284px;
+    width: 278px;
     height: 180px;
     color: hsl(300, 24%, 96%);
     margin: 0.5rem;
-    padding: 0.8rem;
-    font-size: 0.92rem;
+    padding: 0.90rem;
+    font-size: 0.9rem;
     border-radius: 8px;
+}
+#s-two{
+    margin-top: 24px;
+}
+#s-three{
+    margin-top: 48px;
 }
 section > p{
     line-height: 18px;
